@@ -24,5 +24,56 @@ namespace WpfApp3
         {
             InitializeComponent();
         }
+        string strInput;
+        double douOutput;
+
+
+        private void txta_KeyUp(object sender, KeyEventArgs e)
+        {
+            strInput = txta.Text;
+
+            if (double.TryParse(strInput, out douOutput) == true)
+            {
+                txtb.Text = string.Format("{0:0.##########}", douOutput * 0.001);
+                txtc.Text = string.Format("{0:0.##########}", douOutput * 0.000001);
+                txtd.Text = string.Format("{0:0.##########}", douOutput * 0.000000001);
+                txte.Text = string.Format("{0:0.##########}", douOutput * 0.000035274);
+                txtf.Text = string.Format("{0:0.##########}", douOutput * 0.000002205);
+            }
+            else
+            {
+                txtInfo.Text = "請輸入數字";
+                txta.Text = "";
+            }
+        }
+
+        private void btnAllClear_Click_1(object sender, RoutedEventArgs e)
+        {
+            txta.Text = "";
+            txtb.Text = "";
+            txtc.Text = "";
+            txtd.Text = "";
+            txte.Text = "";
+            txtf.Text = "";
+        }
+
+        private void txtb_KeyUp(object sender, KeyEventArgs e)
+        {
+            strInput = txtb.Text;
+
+            if (double.TryParse(strInput, out douOutput) == true)
+            {
+                txta.Text = string.Format("{0:0.##########}", douOutput * 1000);
+                txtc.Text = string.Format("{0:0.##########}", douOutput * 0.001);
+                txtd.Text = string.Format("{0:0.##########}", douOutput * 0.000001);
+                txte.Text = string.Format("{0:0.##########}", douOutput * 0.035274);
+                txtf.Text = string.Format("{0:0.##########}", douOutput * 0.002205);
+            }
+            else
+            {
+                txtInfo.Text = "請輸入數字";
+                txtb.Text = "";
+            }
+        }
     }
 }

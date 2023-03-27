@@ -7,20 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="清除" HorizontalAlignment="Left" Margin="104,78,0,0" VerticalAlignment="Top" Height="23" Width="70"/>
-        <TextBox HorizontalAlignment="Left" Margin="104,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="25"/>
+        <Button x:Name="btnAllClear" Content="清除" HorizontalAlignment="Left" Margin="104,78,0,0" VerticalAlignment="Top" Height="23" Width="70" Click="btnAllClear_Click_1"/>
+        <TextBox x:Name="txta" HorizontalAlignment="Left" Margin="104,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="25" KeyUp="txta_KeyUp"/>
         <Label Content="毫克" HorizontalAlignment="Left" Margin="104,136,0,0" VerticalAlignment="Top" Height="27" Width="108"/>
-        <TextBox HorizontalAlignment="Left" Margin="305,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="25"/>
+        <TextBox x:Name="txtb" HorizontalAlignment="Left" Margin="305,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="25" KeyUp="txtb_KeyUp"/>
         <Label Content="公克" HorizontalAlignment="Left" Margin="305,136,0,0" VerticalAlignment="Top" Height="27" Width="108"/>
-        <TextBox HorizontalAlignment="Left" Margin="509,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="25"/>
+        <TextBox x:Name="txtc" HorizontalAlignment="Left" Margin="509,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="25"/>
         <Label Content="公斤" HorizontalAlignment="Left" Margin="509,136,0,0" VerticalAlignment="Top" Height="27" Width="108"/>
-        <TextBox HorizontalAlignment="Left" Margin="104,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="25"/>
+        <TextBox x:Name="txtd" HorizontalAlignment="Left" Margin="104,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="25"/>
         <Label Content="公噸" HorizontalAlignment="Left" Margin="104,235,0,0" VerticalAlignment="Top" Height="27" Width="108"/>
-        <TextBox HorizontalAlignment="Left" Margin="305,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="25"/>
+        <TextBox x:Name="txte" HorizontalAlignment="Left" Margin="305,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="25"/>
         <Label Content="盎司" HorizontalAlignment="Left" Margin="305,235,0,0" VerticalAlignment="Top" Height="27" Width="108"/>
-        <TextBox HorizontalAlignment="Left" Margin="509,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="25"/>
+        <TextBox x:Name="txtf" HorizontalAlignment="Left" Margin="509,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="25"/>
         <Label Content="磅" HorizontalAlignment="Left" Margin="509,235,0,0" VerticalAlignment="Top" Height="27" Width="108"/>
-        <TextBox HorizontalAlignment="Left" Margin="104,354,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="528" Height="27"/>
+        <TextBox x:Name="txtInfo" HorizontalAlignment="Left" Margin="104,354,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="528" Height="27"/>
         <Label Content="說明文字" HorizontalAlignment="Left" Margin="104,327,0,0" VerticalAlignment="Top" Height="27" Width="108"/>
 
     </Grid>
