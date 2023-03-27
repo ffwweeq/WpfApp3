@@ -113,5 +113,24 @@ namespace WpfApp3
                 txtd.Text = "";
             }
         }
+
+        private void txte_KeyUp(object sender, KeyEventArgs e)
+        {
+            strInput = txte.Text;
+
+            if (double.TryParse(strInput, out douOutput) == true)
+            {
+                txta.Text = string.Format("{0:0.################}", douOutput * 28349.523125);
+                txtb.Text = string.Format("{0:0.################}", douOutput * 28.349523);
+                txtc.Text = string.Format("{0:0.################}", douOutput * 0.02835);
+                txtd.Text = string.Format("{0:0.################}", douOutput * 0.000028);
+                txtf.Text = string.Format("{0:0.################}", douOutput * 0.0625);
+            }
+            else
+            {
+                txtInfo.Text = "請輸入數字";
+                txte.Text = "";
+            }
+        }
     }
 }

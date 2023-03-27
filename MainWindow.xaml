@@ -16,7 +16,7 @@
         <Label Content="公斤" HorizontalAlignment="Left" Margin="509,136,0,0" VerticalAlignment="Top" Height="27" Width="108"/>
         <TextBox x:Name="txtd" HorizontalAlignment="Left" Margin="104,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="25" KeyUp="txtd_KeyUp"/>
         <Label Content="公噸" HorizontalAlignment="Left" Margin="104,235,0,0" VerticalAlignment="Top" Height="27" Width="108"/>
-        <TextBox x:Name="txte" HorizontalAlignment="Left" Margin="305,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="25"/>
+        <TextBox x:Name="txte" HorizontalAlignment="Left" Margin="305,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="25" KeyUp="txte_KeyUp"/>
         <Label Content="盎司" HorizontalAlignment="Left" Margin="305,235,0,0" VerticalAlignment="Top" Height="27" Width="108"/>
         <TextBox x:Name="txtf" HorizontalAlignment="Left" Margin="509,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="25"/>
         <Label Content="磅" HorizontalAlignment="Left" Margin="509,235,0,0" VerticalAlignment="Top" Height="27" Width="108"/>
