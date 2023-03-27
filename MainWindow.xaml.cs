@@ -38,9 +38,9 @@ namespace WpfApp3
             if (_kind != 3)
                 txtd.Text = string.Format("{0:0.##########}", _value * 0.000000001);
             if (_kind != 4)
-                txte.Text = string.Format("{0:0.##########}", _value * 0.000035274);
+                txte.Text = string.Format("{0:0.##########}", _value * 0.000035);
             if (_kind != 5)
-                txtf.Text = string.Format("{0:0.##########}", _value * 0.000002205);
+                txtf.Text = string.Format("{0:0.##########}", _value * 0.000002);
         }
 
         private void txta_KeyUp(object sender, KeyEventArgs e)
@@ -49,11 +49,7 @@ namespace WpfApp3
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                txtb.Text = string.Format("{0:0.##########}", douOutput * 0.001);
-                txtc.Text = string.Format("{0:0.##########}", douOutput * 0.000001);
-                txtd.Text = string.Format("{0:0.##########}", douOutput * 0.000000001);
-                txte.Text = string.Format("{0:0.##########}", douOutput * 0.000035274);
-                txtf.Text = string.Format("{0:0.##########}", douOutput * 0.000002205);
+                caculateAnswer(0, douOutput);
             }
             else
             {
@@ -78,11 +74,7 @@ namespace WpfApp3
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                txta.Text = string.Format("{0:0.##########}", douOutput * 1000);
-                txtc.Text = string.Format("{0:0.##########}", douOutput * 0.001);
-                txtd.Text = string.Format("{0:0.##########}", douOutput * 0.000001);
-                txte.Text = string.Format("{0:0.##########}", douOutput * 0.035274);
-                txtf.Text = string.Format("{0:0.##########}", douOutput * 0.002205);
+                caculateAnswer(1, douOutput * 1000);
             }
             else
             {
@@ -97,11 +89,7 @@ namespace WpfApp3
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                txta.Text = string.Format("{0:0.###########}", douOutput * 1000000);
-                txtb.Text = string.Format("{0:0.###########}", douOutput * 1000);
-                txtd.Text = string.Format("{0:0.###########}", douOutput * 0.001);
-                txte.Text = string.Format("{0:0.###########}", douOutput * 35.273962);
-                txtf.Text = string.Format("{0:0.###########}", douOutput * 2.204623);
+                caculateAnswer(2, douOutput * 1000000);
             }
             else
             {
@@ -116,11 +104,7 @@ namespace WpfApp3
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                txta.Text = string.Format("{0:0.################}", douOutput * 10001000000000);
-                txtb.Text = string.Format("{0:0.################}", douOutput * 1000000);
-                txtc.Text = string.Format("{0:0.################}", douOutput * 1000);
-                txte.Text = string.Format("{0:0.################}", douOutput * 35273.96195);
-                txtf.Text = string.Format("{0:0.################}", douOutput * 2204.622622);
+                caculateAnswer(3, douOutput * 1000000000);
             }
             else
             {
@@ -135,11 +119,7 @@ namespace WpfApp3
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                txta.Text = string.Format("{0:0.################}", douOutput * 28349.523125);
-                txtb.Text = string.Format("{0:0.################}", douOutput * 28.349523);
-                txtc.Text = string.Format("{0:0.################}", douOutput * 0.02835);
-                txtd.Text = string.Format("{0:0.################}", douOutput * 0.000028);
-                txtf.Text = string.Format("{0:0.################}", douOutput * 0.0625);
+                caculateAnswer(4, douOutput * 350000);
             }
             else
             {
@@ -154,11 +134,7 @@ namespace WpfApp3
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                txta.Text = string.Format("{0:0.################}", douOutput * 453592.37);
-                txtb.Text = string.Format("{0:0.################}", douOutput * 453.59237);
-                txtc.Text = string.Format("{0:0.################}", douOutput * 0.453592);
-                txtd.Text = string.Format("{0:0.################}", douOutput * 0.000454);
-                txte.Text = string.Format("{0:0.################}", douOutput * 16);
+                caculateAnswer(5, douOutput * 200000);
             }
             else
             {
