@@ -119,7 +119,7 @@ namespace WpfApp3
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                caculateAnswer(4, douOutput * 350000);
+                caculateAnswer(4, douOutput * 28349.523125);
             }
             else
             {
@@ -134,7 +134,7 @@ namespace WpfApp3
 
             if (double.TryParse(strInput, out douOutput) == true)
             {
-                caculateAnswer(5, douOutput * 200000);
+                caculateAnswer(5, douOutput * 453592.37);
             }
             else
             {
