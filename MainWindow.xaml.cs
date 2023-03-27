@@ -27,6 +27,21 @@ namespace WpfApp3
         string strInput;
         double douOutput;
 
+        private void caculateAnswer(int _kind, double _value)
+        {
+            if (_kind != 0)
+                txta.Text = string.Format("{0:0.##########}", _value);
+            if (_kind != 1)
+                txtb.Text = string.Format("{0:0.##########}", _value * 0.001);
+            if (_kind != 2)
+                txtc.Text = string.Format("{0:0.##########}", _value * 0.000001);
+            if (_kind != 3)
+                txtd.Text = string.Format("{0:0.##########}", _value * 0.000000001);
+            if (_kind != 4)
+                txte.Text = string.Format("{0:0.##########}", _value * 0.000035274);
+            if (_kind != 5)
+                txtf.Text = string.Format("{0:0.##########}", _value * 0.000002205);
+        }
 
         private void txta_KeyUp(object sender, KeyEventArgs e)
         {
